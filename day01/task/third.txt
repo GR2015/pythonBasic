@@ -1,0 +1,9 @@
+a = False
+b = True
+c = False
+1.b and c = False
+2.b or c = True
+3.not a and b = True
+4.(a and b ) or not c = True
+5.not b and not (a or c) = False
+
