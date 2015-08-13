@@ -1,15 +1,12 @@
 #!/usr/bin/python
 #coding=utf-8
 
-print "***************×Ö·û´®ÒÆÎ»²Ù×÷***************"
+print "***************å­—ç¬¦ä¸²ç§»ä½æ“ä½œ***************"
 str_input = raw_input("input a string :")
 try :
-  length = int(raw_input("ÇëÊäÈëÒÆÎ»µÄ³¤¶È£¨ÕıÊı±íÓÒÒÆ£¬¸ºÊı±í×óÒÆ£©:"))
+  length = int(raw_input("è¯·è¾“å…¥ç§»ä½çš„é•¿åº¦ï¼ˆæ­£æ•°è¡¨å³ç§»ï¼Œè´Ÿæ•°è¡¨å·¦ç§»ï¼‰:"))
 except :
   print "please input a interger !"
-if length >= 0 :
-  str_input = str_input[-length : ] + str_input[ : -length]
-elif length < 0 :
-  str_input = str_input[ : -length] + str_input[-length : ]
-print "ÒÆÎ»ºóµÄ×Ö·û´®£º",str_input
+str_input = str_input[-length : ] + str_input[ : -length]
+print "ç§»ä½åçš„å­—ç¬¦ä¸²ï¼š",str_input
 
