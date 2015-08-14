@@ -1,0 +1,122 @@
+1.打印图形
+>>> for i in range(5):
+...   if i%2==0:
+...     print '  |  |  '
+...   else:
+...     print '--------'
+...
+  |  |
+--------
+  |  |
+--------
+  |  |
+  
+  
+  
+2.计算结果
+
+2.1
+>>> (3*5)/(2+3)
+3
+
+2.2
+>>> import math
+>>> math.sqrt(7+9)*2
+8.0
+
+2.3
+>>> math.pow(4-7,3)
+-27.0	
+
+2.4
+>>> math.pow(-19+100,1./4)
+3.0
+
+2.5
+>>> math.sin(math.pi/4)+math.cos(math.pi/4)/2
+1.0606601717798212
+
+2.6
+>>> (276/19.0)+2*(math.log(12,7))
+17.080294606012934
+
+3.布尔操作的结果
+3.1 False
+3.2 True
+3.3 True
+3.4 True
+3.5 False
+
+4.补充code
+>>> a_list=[3,5,6,12]
+>>> a_list
+[3, 5, 6, 12]
+
+4.1 
+>>> a_list[0]
+3
+
+4.2 
+>>> a_list[-1]
+12
+
+4.3 
+>>> a_list[1:]
+[5, 6, 12]
+>>>
+
+4.4 
+>>> for i in a_list:
+...   print i,
+...
+3 5 6 12
+>>>
+
+4.5 
+>>> a_list[::-1]
+[12, 6, 5, 3]
+>>>
+
+4.6 
+>>> a_list=[3,5,6,12]
+>>> b_list=[]
+>>> for i in a_list:
+...   b_list.append(i*3)
+...
+>>> b_list
+[9, 15, 18, 36]
+
+
+4.7 
+>>> b_list=[]
+>>> a=True
+>>> b=False
+>>> for i in a_list:
+...   if i%2==0:
+...     b_list.append(a)
+...   else:
+...     b_list.append(b)
+...
+>>> b_list
+[False, False, True, True]
+
+5.字符串移位
+>>> str_a='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+>>> str_a[3:]+str_a[:3]
+'DEFGHIJKLMNOPQRSTUVWXYZABC'
+
+扩展1
+左移两位
+>>> str_a[-2:]+str_a[:-2]
+'YZABCDEFGHIJKLMNOPQRSTUVWX'
+右移两位
+>>> str_a[2:]+str_a[:2]
+'CDEFGHIJKLMNOPQRSTUVWXYZAB'
+
+扩展2
+>>> a=raw_input('input string:')
+input string:abcde
+>>> b=int(raw_input('input a number:'))
+input a number:1
+>>> print a[b:]+a[:b]
+bcdea
