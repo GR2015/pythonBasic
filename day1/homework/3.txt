@@ -1,0 +1,15 @@
+a = False 
+b = True 
+c = False 
+1. b and c 
+2. b or c 
+3. not a and b 
+4. (a and b) or not c 3 
+5. not b and not (a or c)
+
+´ð°¸
+1.False
+2.True
+3.True
+4.True
+5.False
