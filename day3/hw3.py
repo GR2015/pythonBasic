@@ -18,7 +18,7 @@ def countNum(s):
   return numDigit
 
 
-s="abcd1234ef56q"
+s=raw_input("请输入字符串：")
 print "字母个数为：%d，数字个数为:%d" %(countAlpha(s),countNum(s))
      
      

@@ -31,4 +31,4 @@ def mostIP(lista):
 
 a=["10.1.0.1","10.1.0.2","10.1.0.1","10.1.2.58","10.1.0.2"]
 print "a=",a
-print "出现次数最多的IP为：%s", mostIP(a)
+print "出现次数最多的IP为:", mostIP(a)
